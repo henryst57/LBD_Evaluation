@@ -1,0 +1,22 @@
+Code for hybrid dataset creation and indirect association measure analysis
+
+Folders and files in each:
+
+datasetCreation
+   getSemMedDBData.pl - gets matrices from SemMedDB mysql database
+   createWholeDataset.pl - creates all possible hybrid datasets
+   getDataStats.pl - gets stats about each hybrid dataset
+   
+scoreCreation
+   computeCosineForVectorFile.pl - computes cosine scores
+   getScores.pl - gets scores for all indirect measures (uses UMLS::Association)
+
+evaluation
+   generateAllResults.pl - generates results for all indirect association measures
+   createPRC.pl - generates a PRC curve
+   createPrecisionAtK.pl - generates a precision at K graph
+   flipNegs.pl - flips -1 (can't compute indicator) to 99999, should be used if sorting in ascending order
+   combinePlots.pl - used to combine PRC plots of different measures into a single file to make plotting easier
+
+
+
