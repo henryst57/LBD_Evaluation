@@ -286,6 +286,6 @@ sub askHelp {
 #### Shows the help (description and options)
 sub showHelp {
     print "Creates a PRC or ROC curve from a scores and truth file.\n";
-    print "Example of how to run (with all options):\n"
+    print "Example of how to run (with all options):\n";
     print "   perl createPRC.pl scoresFile goldFile graphOutputFile --roc --sortAscending --random";
 }

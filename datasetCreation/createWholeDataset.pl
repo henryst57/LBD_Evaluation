@@ -303,7 +303,8 @@ sub _outputDataSet {
 	or die ("ERROR: unable to open pairsOutFile: $pairsOutFile\n");
     foreach my $subject (sort keys %{$vocabularyRef}) {
 	foreach my $object (sort keys %{$vocabularyRef}) {
-	    if (!defined ${$knownPairsRef}{"$cui1,$cui2"} && !defined ${$knownPairsRef}{"$cui2,$cui1"}) {
+	    if (!defined ${$knownPairsRef}{"$subject,$object"} 
+		&& !defined ${$knownPairsRef}{"$object,$subject"}) {
 		my $truthVal = 0;
 		if (defined ${$goldPairsRef}{"$subject,$object"}
 		    || defined ${$goldPairsRef}{"$object,$subject"}) {

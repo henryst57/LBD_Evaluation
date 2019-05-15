@@ -4,19 +4,20 @@
 use strict;
 use warnings;
 
-my $outFile = 'comparison_pak_t1_threshold4.csv';
-my $resultsFolder = "precisionAtK_t1/";
+my $outFile = 'comparison_pak_threshold6.csv';
+my $resultsFolder = "precisionAtK/";
 my @files = ();
-push @files, $resultsFolder."pak_threshold4_ltc";
-push @files, $resultsFolder."pak_threshold4_lta";
-push @files, $resultsFolder."pak_threshold4_mwa";
-push @files, $resultsFolder."pak_threshold4_sbc";
-push @files, $resultsFolder."pak_threshold4_w2vCos";
-push @files, $resultsFolder."pak_threshold4_dirCos";
-push @files, $resultsFolder."pak_threshold4_freq";
-push @files, $resultsFolder."pak_threshold4_random";
-push @files, $resultsFolder."pak_threshold4_ideal";
-my @labels = ("average", "LTC", "LTA", "MWA", "SBC", "w2vCos", "dirCos", "Freq", "Random", "Ideal");
+push @files, $resultsFolder."pak_threshold6_ltc";
+push @files, $resultsFolder."pak_threshold6_lta_asc";
+push @files, $resultsFolder."pak_threshold6_mwa_asc";
+push @files, $resultsFolder."pak_threshold6_sbc";
+push @files, $resultsFolder."pak_threshold6_lsa_asc";
+push @files, $resultsFolder."pak_threshold6_w2vCos_asc";
+push @files, $resultsFolder."pak_threshold6_dirCos_asc";
+push @files, $resultsFolder."pak_threshold6_freq";
+push @files, $resultsFolder."pak_threshold6_random";
+push @files, $resultsFolder."pak_threshold6_ideal";
+my @labels = ("average", "LTC", "LTA", "MWA", "SBC", "LSA", "w2vCos", "dirCos", "Freq", "Random", "Ideal");
 
 
 

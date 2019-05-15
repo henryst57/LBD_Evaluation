@@ -341,6 +341,6 @@ sub askHelp {
 #### Shows the help (description and options)
 sub showHelp {
     print "Creates a precision at K graph from a scores and truth file.\n";
-    print "Example of how to run (with all options):\n"
+    print "Example of how to run (with all options):\n";
     print "   perl createPrecisionAtK.pl scoresFile goldFile graphOutputFile --sortAscending --random";
 }
